@@ -10,7 +10,7 @@ function setup() {
 function draw() {
   noStroke();
   fill((index==0)?255:0,(index==1)?255:0,(index==2)?255:0, 1);
-  ellipse(mouseX, mouseY, 10);
+  ellipse(mouseX, mouseY, 90);
 }
 
 
