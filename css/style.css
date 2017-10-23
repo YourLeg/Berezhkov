@@ -10,6 +10,25 @@ ol{
   font-size: 20;
 }
 
-#cnv {
+canvas {
   position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#text {
+  z-index: 2;
+}
+
+li { list-style-type: none; }
+ol { counter-reset: list1; }
+ol li:before {
+  counter-increment: list1;
+  content: counter(list1) ". ";
+}
+ol ol { counter-reset: list2; }
+ol ol li:before {
+  counter-increment: list2;
+  content: counter(list1) "." counter(list2) ". ";
 }
