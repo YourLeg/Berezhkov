@@ -11,14 +11,15 @@ ol{
 }
 
 canvas {
-  position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
+  position: fixed;
 }
 
 #text {
   z-index: 2;
+  position: absolute;
 }
 
 li { list-style-type: none; }
@@ -31,4 +32,8 @@ ol ol { counter-reset: list2; }
 ol ol li:before {
   counter-increment: list2;
   content: counter(list1) "." counter(list2) ". ";
+}
+
+a{
+  color: black;
 }
